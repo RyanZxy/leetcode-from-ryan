@@ -8,4 +8,4 @@
 
 ## NO. Order
 
-1052.生气的书店老板[解析]()[C++](https://github.com/RyanZxy/leetcode-from-ryan/blob/main/C%2B%2B/1052.cpp)
+1052.生气的书店老板  [解析]()  [C++](https://github.com/RyanZxy/leetcode-from-ryan/blob/main/C%2B%2B/1052.cpp)
