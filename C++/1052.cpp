@@ -3,6 +3,57 @@
 
 
 
+/*耗时最少的提交记录*/
+class Solution {
+public:
+    int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int X) {
+        int sz = customers.size();
+        int right = 0;
+        int left = 0;
+        int result = 0;
+        int winSum = 0;
+        int maxWinSum = 0;
+        while(right < sz){
+            if(right < X){
+                if(grumpy[right] == 0){
+                    result += customers[right];
+                } else {
+                    winSum += customers[right];
+                }
+            } else {
+                result += customers[right] * (grumpy[right] ^ 1);
+                winSum = winSum - customers[left] * grumpy[left]
+                   + customers[right] * grumpy[right];
+                   left++;
+            }
+            maxWinSum = max(maxWinSum, winSum);
+            right++;
+        }
+        return result + maxWinSum;
+    }
+};
+
+/*占用内存最少的提交记录*/
+class Solution {
+public:
+    int maxSatisfied(vector<int>& customers, vector<int>& grumpy, int k) {
+        int n=customers.size(),ans=0,maxl=0,tl=0,i=0;
+        for(;i<n;++i){
+            if(grumpy[i])grumpy[i]=customers[i];
+            else ans+=customers[i];
+        }
+        for(i=0;i<k;++i){
+            maxl+=grumpy[i];
+            tl+=grumpy[i];
+        }
+        for(;i<n;++i){
+            tl+=grumpy[i]-grumpy[i-k];
+            maxl=max(maxl,tl);
+        }
+        return ans+maxl;
+    }
+}; 
+
 /*个人题解*/
 /*执行用时44ms，内存10.9MB*/
 
