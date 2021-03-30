@@ -8,5 +8,5 @@
 
 ## NO. Order
 
-0001.两数之和  [解析](https://www.lofter.com/blog/ryanzxy)  [C++](https://github.com/RyanZxy/leetcode-from-ryan/blob/main/C%2B%2B/0001.cpp)
+0001.两数之和  [解析](https://www.lofter.com/blog/ryanzxy)  [C++](https://github.com/RyanZxy/leetcode-from-ryan/blob/main/C%2B%2B/0001.cpp)  
 1052.生气的书店老板  [解析]()  [C++](https://github.com/RyanZxy/leetcode-from-ryan/blob/main/C%2B%2B/1052.cpp)
