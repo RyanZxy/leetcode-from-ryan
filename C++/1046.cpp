@@ -2,8 +2,6 @@
 /*1046.最后一块石头的重量*/
 
 
-
-
 /*个人题解*/
 class Solution {
 public:
